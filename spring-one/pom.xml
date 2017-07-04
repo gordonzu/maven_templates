@@ -12,7 +12,6 @@
 		<spring.version>4.3.9.RELEASE</spring.version>
 		<jetty.version>9.3.14.v20161028</jetty.version>
 		<junit.version>4.11</junit.version>
-		<jdk.version>1.8</jdk.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -56,22 +55,17 @@
             <version>1.2.17</version>
         </dependency>
 
-       <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+   </dependencies>
 
     <build>
         <finalName>spring-one</finalName>
+        <plugins>
             <plugin>
-				<groupId>org.eclipse.jetty</groupId>
+		        <groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty.version}</version>
 			</plugin>
-       </plugins> 
+        </plugins> 
     </build>
 </project>
 
